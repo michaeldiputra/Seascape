@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ekosistem Lautan</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="img/wave-icon.png" type="image/x-icon">
+</head>
+<body>
+    <div class="sea">
+        <div class="bg-sunset"></div>
+        <div class="box-sun">
+            <img src="img/sun.png" class="sun"  id="sun" alt="">
+        </div>
+        <div class="box-cloud" id="boxcloud"></div>
+        <img src="img/cloud/cloud-1.png" class="cloud-1 cloud" id="cloud" alt="">
+        <img src="img/cloud/cloud-2.png" class="cloud-2 cloud" id="cloud" alt="">
+        <img src="img/cloud/cloud-3.png" class="cloud-3 cloud" id="cloud" alt="">
+        <img src="img/cloud/cloud-4.png" class="cloud-4 cloud" id="cloud" alt="">
+        <img src="img/cloud/cloud-5.png" class="cloud-5 cloud" id="cloud" alt="">
+        <img src="img/cloud/cloud-6.png" class="cloud-6 cloud" id="cloud" alt="">
+        <img src="img/cloud/cloud-7.png" class="cloud-7 cloud" id="cloud" alt="">
+        <img src="img/wave/wave-1.png" class="wave-1 wave" id="wave1" alt="">
+        <img src="img/wave/wave-2.png" class="wave-2 wave" id="wave2" alt="">
+        <img src="img/boat.png" class="boat" id="boat" alt="">
+        <img src="img/wave/wave-3.png" class="wave-3 wave"  id="wave3" alt="">
+        <img src="img/wave/wave-4.png" class="wave-4 wave"  id="wave4" alt="">
+        <img src="img/wave/wave-5.png" class="wave-5 wave"  id="wave5" alt="">
+    </div>
+    <div class="bg-wave"></div>
+    <div class="under-sea" id="under-sea">
+        <div class="laut-dangkal laut" id="laut-dangkal">
+
+        </div>
+        <div class="laut-menengah laut" id="laut-menengah">
+
+        </div>
+        <div class="laut-dalam laut" id="laut-dalam">
+
+        </div>
+        <div class="laut-sangat-dalam laut" id="laut-sangat-dalam">
+            
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script>
+
+        gsap.to("#sun", {
+            scrollTrigger : {
+                scrub : 1
+            },
+            y : 100
+        })
+
+
+        gsap.to(".cloud", {
+            scrollTrigger : {
+                scrub : 1
+            },
+            x : -200
+        })
+
+        gsap.to("#wave1", {
+            scrollTrigger : {
+                scrub : 1
+            },
+            y : 0
+        })
+
+        gsap.to("#wave2", {
+            scrollTrigger : {
+                scrub : 1
+            },
+            y : -200
+        })
+
+        gsap.to("#wave3", {
+            scrollTrigger : {
+                scrub : 1
+            },
+            y : -300
+        })
+
+        gsap.to("#wave4", {
+            scrollTrigger : {
+                scrub : 1
+            },
+            y : -400
+        })
+
+        gsap.to("#wave5", {
+            scrollTrigger : {
+                scrub : 1
+            },
+            y : -500
+        })
+
+        gsap.to("#boat", {
+            scrollTrigger : {
+                scrub : 1
+            },
+            x : -900
+        })
+
+        gsap.to(".bg-wave", {
+            scrollTrigger : {
+                scrub : 1
+            },
+            y : -500
+        })
+
+    </script>
+</body>
+</html>
