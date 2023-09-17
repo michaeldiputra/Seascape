@@ -17,7 +17,7 @@ body {
 }
 
 .sea .bg-sunset {
-    background: url(img/bg-sunset.png);
+    background: url(../img/bg-sunset.png);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
