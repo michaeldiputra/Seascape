@@ -8,14 +8,16 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="shortcut icon" href="img/wave-icon.png" type="image/x-icon">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <script src="script.js" defer></script>
 </head>
 <body>
-    <div class="sea">
+    <div class="sea" id="home">
         <div class="bg-sunset"></div>
         <div class="box-sun">
             <img src="img/sun.png" class="sun"  id="sun" alt="">
         </div>
-        <div class="box-cloud" id="boxcloud"></div>
+        <div class="box-cloud" id="boxcloud"> </div>
         <img src="img/cloud/cloud-1.png" class="cloud-1 cloud" id="cloud" alt="">
         <img src="img/cloud/cloud-2.png" class="cloud-2 cloud" id="cloud" alt="">
         <img src="img/cloud/cloud-3.png" class="cloud-3 cloud" id="cloud" alt="">
@@ -27,162 +29,358 @@
         <img src="img/wave/wave-2.png" class="wave-2 wave" id="wave2" alt="">
         <img src="img/boat.png" class="boat" id="boat" alt="">
         <div class="seeunder">
-            <img src="img/bublechat.png" alt="" href="index.html#under-sea" >
-            <a href="index.html#under-sea">Mau liat Ekosistem Laut?</a>
+            <a href="index.html#under-sea">
+                <div class="bublechat"><img src="img/bublechat.png" alt="" href="index.html#under-sea" ></div>
+                <div class="seeunder-text"><p>Mau Lihat Ekosistem Laut?</p></div>
+            </a>
         </div>
         <img src="img/wave/wave-3.png" class="wave-3 wave"  id="wave3" alt="">
         <img src="img/wave/wave-4.png" class="wave-4 wave"  id="wave4" alt="">
         <img src="img/wave/wave-5.png" class="wave-5 wave"  id="wave5" alt="">
     </div>
     <div class="bg-wave"></div>
-    <div class="under-sea" id="under-sea">
-        <div class="laut-dangkal laut" id="laut-dangkal">
-
+    <div class="container">
+        <div class="under-sea">
+            <div class="zonalaut lithoral" id="lithoral">
+                <div class="hrefundersea" id="under-sea"></div>
+                <h1 class="text-style-allcaps">laut zona litoral</h1>
+                <h2 class="text-style-allcaps">(lithoral)</h2>
+                <div class="dec glass-morph">
+                    <p>Zona litoral juga disebut dengan zona pesisir atau zona pasang surut. Laut zona litoral berada di antara garis air laut pasang dan haris air laut surut. Pada saat air laut pasang, zona ini tergenang air laut. Sedangkan pada saat air laut surut, zona ini menjadi daratan.</p>
+                </div>
+                <div class="wrapper">
+                    <i id="left" class="fa-solid fa-angle-left"></i>
+                    <ul class="carousel">
+                        <li class="card">
+                                <div class="img">
+                                    <img src="img/under-sea/lithoral/bintang-laut.jpg" alt="img" draggable="false">
+                                    <div class="click" id="bintanglaut"><p>Click to see</p></div>
+                                </div>
+                            <h2>Bintang Laut</h2>
+                        </li>
+                        <li class="card">
+                            <div class="img">
+                                <img src="img/under-sea/lithoral/babi-laut.jpg" alt="img" draggable="false">
+                                <div class="click" id="bintanglaut"><p>Click to see</p></div>
+                            </div>
+                            <h2>Babi Laut</h2>
+                        </li>
+                        <li class="card">
+                            <div class="img">
+                                <img src="images/img-2.jpg" alt="img" draggable="false">
+                                <div class="click" id="bintanglaut"><p>Click to see</p></div>
+                            </div>
+                            <h2>Joenas Brauers</h2>
+                        </li>
+                        <li class="card">
+                            <div class="img"><img src="images/img-4.jpg" alt="img" draggable="false"></div>
+                            <h2>James Khosravi</h2>
+                        </li>
+                        <li class="card">
+                            <div class="img"><img src="images/img-5.jpg" alt="img" draggable="false"></div>
+                            <h2>Kristina Zasiadko</h2>
+                        </li>
+                        <li class="card">
+                            <div class="img"><img src="images/img-6.jpg" alt="img" draggable="false"></div>
+                            <h2>Donald Horton</h2>
+                        </li>
+                    </ul>
+                    <i id="right" class="fa-solid fa-angle-right"></i>
+                </div>
+                <div class="card-dec-container dec-bintanglaut" id="dec-bintanglaut">
+                    <div class="card-dec glass-morph">
+                        <img src="img/under-sea/lithoral/bintang-laut.jpg" alt="">
+                        <div class="card-dec-text"><p>Tubuhnya berbentuk seperti bintang, hidup di habitat pesisir pantai. Memiliki lima lengan berduri pendek dan tumpul pada permukaan tubuhnya. Alat geraknya berupa kaki ambulakral. Tubuh bintang laut menjadi sisi oral atau sisi bawah (tempat mulut), dan sisi aboral atau sisi atas (tempat anus).</p></div>
+                    </div>
+                </div>
+                <div class="card-dec-container dec-babilaut" id="dec-babilaut">
+                    <div class="card-dec glass-morph">
+                        <img src="img/under-sea/lithoral/babi-laut.jpg" alt="">
+                        <div class="card-dec-text"><p>Landak laut atau disebut juga bulu babi merupakan hewan laut yang berbentuk bundar dan memiliki duri beracun pada kulitnya yang dapat digerakkan.</p></div>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="laut-menengah laut" id="laut-menengah">
-
-        </div>
-        <div class="laut-dalam laut" id="laut-dalam">
-
-        </div>
-        <div class="laut-sangat-dalam laut" id="laut-sangat-dalam">
-            
-        </div>
+    
+        <footer class="footer" id="footer">
+            <div class="footer-above padding-global">
+                <div class="container">
+                    <div class="heading">
+                        <h1>Jaga laut kita.</h1>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-middle padding-global">
+                <div class="padding-top">
+                    <div class="footer-grid">
+                        <div class="footer-column">
+                            <h3>seascape.</h3>
+                            <div class="nav">
+                                <div class="button-group">
+                                    <a href="https://www.instagram.com/michael_257raydi/">
+                                        <img src="img/icon/instagram.png" alt="">
+                                        <p>instagram</p>
+                                    </a>
+                                </div>
+                                <div class="button-group">
+                                    <a href="https://wa.me/+6281353199022">
+                                        <img src="img/icon/whatsapp.png" alt="">
+                                        <p>whatsapp</p>
+                                    </a>
+                                </div>
+                                <div class="button-group">
+                                    <a href="https://github.com/michaeldiputra/Seascape">
+                                        <img src="img/icon/github.png" alt="">
+                                        <p>github</p>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="footer-column">
+                            <h3>pages</h3>
+                            <div class="nav">
+                                <a href="index.html#home">home</a>
+                                <a href="index.html#under-sea">ekosistem laut</a>
+                                <a href="index.html#footer">footer</a>
+                            </div>
+                        </div>
+                        <div class="footer-column">
+                            <h3>Zona Laut</h3>
+                            <div class="nav">
+                                <a href="">lithoral</a>
+                                <a href="">neritic</a>
+                                <a href="">bathyal</a>
+                                <a href="">abysal</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
     </div>
-
-    <footer class="footer">
-        <div class="footer-above padding-global">
-            <div class="container">
-                <div class="heading">
-                    <h1>Kembangkan skill coding mu.</h1>
-                </div>
-            </div>
-        </div>
-        <div class="footer-middle padding-global">
-            <div class="padding-top">
-                <div class="footer-grid">
-                    <div class="footer-column">
-                        <h3>CodeCamp.</h3>
-                        <div class="nav">
-                            <div class="button-group">
-                                <img src="img/icon/instagram.png" alt="">
-                                <a href="">INSTAGRAM</a>
-                            </div>
-                            <div class="button-group">
-                                <img src="img/icon/whatsapp.png" alt="">
-                                <a href="">WHATSAPP</a>
-                            </div>
-                            <div class="button-group">
-                                <img src="img/icon/facebook.png" alt="">
-                                <a href="">FACEBOOK</a>
-                            </div>
-                            <div class="button-group">
-                                <img src="img/icon/google.png" alt="">
-                                <a href="">GOOGLE</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="footer-column">
-                        <h3>HALAMAN</h3>
-                        <div class="nav">
-                            <a href="">beranda</a>
-                            <a href="">program</a>
-                            <a href="">kelas</a>
-                            <a href="">alur belajar</a>
-                        </div>
-                    </div>
-                    <div class="footer-column">
-                        <h3>Lorem</h3>
-                        <div class="nav">
-                            <a href="">Lorem</a>
-                            <a href="">Lorem ipsun</a>
-                            <a href="">Lorem</a>
-                            <a href="">Lorem</a>
-                            <a href="">Lorem ipsun</a>
-                            <a href="">Lorem</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </footer>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
     <script>
+        
+    gsap.to("#sun", {
+        scrollTrigger : {
+            scrub : 1
+        },
+        y : 100
+    })
 
-        gsap.to("#sun", {
-            scrollTrigger : {
-                scrub : 1
-            },
-            y : 100
-        })
+
+    gsap.to(".cloud", {
+        scrollTrigger : {
+            scrub : 1
+        },
+        x : -500
+    })
+
+    gsap.to("#wave1", {
+        scrollTrigger : {
+            scrub : 1
+        },
+        top : 100
+    })
+
+    gsap.to("#wave2", {
+        scrollTrigger : {
+            scrub : 1
+        },
+        top : 50
+    })
+
+    gsap.to("#wave3", {
+        scrollTrigger : {
+            scrub : 1
+        },
+        top : 0
+    })
+
+    gsap.to("#wave4", {
+        scrollTrigger : {
+            scrub : 1
+        },
+        top : -50
+    })
+
+    gsap.to("#wave5", {
+        scrollTrigger : {
+            scrub : 1
+        },
+        top : -100
+    })
+
+    gsap.to("#boat", {
+        scrollTrigger : {
+            scrub : 1
+        },
+        left : -70,
+        top : -150
+    })
+
+    gsap.to(".seeunder", {
+        scrollTrigger : {
+            scrub : 1
+        },
+        left : -10,
+        top : 30
+    })
+
+    gsap.to(".bg-wave", {
+        scrollTrigger : {
+            scrub : 1
+        },
+        top : -70
+    })
 
 
-        gsap.to(".cloud", {
-            scrollTrigger : {
-                scrub : 1
-            },
-            x : -500
-        })
+    // Fungsi untuk menambah/menghapus class saat mengklik #bintanglaut
+    document.getElementById("bintanglaut").addEventListener("click", function() {
+        // Cari elemen dengan class card-dec-container dan card-dec
+        var cardDecContainer = document.querySelector(".card-dec-container");
+        var cardDec = document.querySelector(".card-dec");
 
-        gsap.to("#wave1", {
-            scrollTrigger : {
-                scrub : 1
-            },
-            top : 100
-        })
+        // Tambahkan/menghapus class card-dec-buka pada elemen tersebut
+        cardDecContainer.classList.toggle("card-dec-buka");
+        cardDec.classList.toggle("card-dec-buka");
+    });
 
-        gsap.to("#wave2", {
-            scrollTrigger : {
-                scrub : 1
-            },
-            top : 50
-        })
+    // Fungsi untuk menghapus class saat mengklik #dec-bintanglaut
+    document.getElementById("dec-bintanglaut").addEventListener("click", function() {
+        // Cari elemen dengan class card-dec-container dan card-dec
+        var cardDecContainer = document.querySelector(".card-dec-container");
+        var cardDec = document.querySelector(".card-dec");
 
-        gsap.to("#wave3", {
-            scrollTrigger : {
-                scrub : 1
-            },
-            top : 0
-        })
+        // Hapus class card-dec-buka dari elemen tersebut
+        cardDecContainer.classList.remove("card-dec-buka");
+        cardDec.classList.remove("card-dec-buka");
+    });
 
-        gsap.to("#wave4", {
-            scrollTrigger : {
-                scrub : 1
-            },
-            top : -50
-        })
+    // coba
+    // Fungsi untuk menambah/menghapus class saat mengklik #babilaut
+document.getElementById("babilaut").addEventListener("click", function() {
+    // Cari elemen dengan class card-dec-container dan card-dec
+    var cardDecContainer = document.querySelector(".card-dec-container.dec-babilaut");
+    var cardDec = document.querySelector(".card-dec");
 
-        gsap.to("#wave5", {
-            scrollTrigger : {
-                scrub : 1
-            },
-            top : -100
-        })
+    // Tambahkan/menghapus class card-dec-buka pada elemen tersebut
+    cardDecContainer.classList.toggle("card-dec-buka");
+    cardDec.classList.toggle("card-dec-buka");
+});
 
-        gsap.to("#boat", {
-            scrollTrigger : {
-                scrub : 1
-            },
-            left : -70,
-            top : -150
-        })
+// Fungsi untuk menghapus class saat mengklik #dec-babilaut
+document.getElementById("dec-babilaut").addEventListener("click", function() {
+    // Cari elemen dengan class card-dec-container dan card-dec
+    var cardDecContainer = document.querySelector(".card-dec-container.dec-babilaut");
+    var cardDec = document.querySelector(".card-dec");
 
-        gsap.to(".seeunder", {
-            scrollTrigger : {
-                scrub : 1
-            },
-            left : -10,
-            top : 30
-        })
+    // Hapus class card-dec-buka dari elemen tersebut
+    cardDecContainer.classList.remove("card-dec-buka");
+    cardDec.classList.remove("card-dec-buka");
+});
 
-        gsap.to(".bg-wave", {
-            scrollTrigger : {
-                scrub : 1
-            },
-            top : -70
-        })
+    
+
+
+    const wrapper = document.querySelector(".wrapper");
+    const carousel = document.querySelector(".carousel");
+    const firstCardWidth = carousel.querySelector(".card").offsetWidth;
+    const arrowBtns = document.querySelectorAll(".wrapper i");
+    const carouselChildrens = [...carousel.children];
+
+    let isDragging = false,
+        isAutoPlay = true,
+        startX,
+        startScrollLeft,
+        timeoutId;
+
+    // Get the number of cards that can fit in the carousel at once
+    let cardPerView = Math.round(carousel.offsetWidth / firstCardWidth);
+
+    // Insert copies of the last few cards to beginning of carousel for infinite scrolling
+    carouselChildrens
+        .slice(-cardPerView)
+        .reverse()
+        .forEach((card) => {
+            carousel.insertAdjacentHTML("afterbegin", card.outerHTML);
+    });
+
+    // Insert copies of the first few cards to end of carousel for infinite scrolling
+    carouselChildrens.slice(0, cardPerView).forEach((card) => {
+        carousel.insertAdjacentHTML("beforeend", card.outerHTML);
+    });
+
+    // Scroll the carousel at appropriate postition to hide first few duplicate cards on Firefox
+    carousel.classList.add("no-transition");
+    carousel.scrollLeft = carousel.offsetWidth;
+    carousel.classList.remove("no-transition");
+
+    // Add event listeners for the arrow buttons to scroll the carousel left and right
+    arrowBtns.forEach((btn) => {
+        btn.addEventListener("click", () => {
+        carousel.scrollLeft += btn.id == "left" ? -firstCardWidth : firstCardWidth;
+    });
+    });
+
+    const dragStart = (e) => {
+        isDragging = true;
+        carousel.classList.add("dragging");
+    // Records the initial cursor and scroll position of the carousel
+        startX = e.pageX;
+        startScrollLeft = carousel.scrollLeft;
+    };
+
+    const dragging = (e) => {
+    if (!isDragging) return; // if isDragging is false return from here
+    // Updates the scroll position of the carousel based on the cursor movement
+        carousel.scrollLeft = startScrollLeft - (e.pageX - startX);
+    };
+
+    const dragStop = () => {
+        isDragging = false;
+        carousel.classList.remove("dragging");
+    };
+
+    const infiniteScroll = () => {
+    // If the carousel is at the beginning, scroll to the end
+        if (carousel.scrollLeft === 0) {
+        carousel.classList.add("no-transition");
+        carousel.scrollLeft = carousel.scrollWidth - 2 * carousel.offsetWidth;
+        carousel.classList.remove("no-transition");
+    }
+    // If the carousel is at the end, scroll to the beginning
+    else if (
+        Math.ceil(carousel.scrollLeft) ===
+        carousel.scrollWidth - carousel.offsetWidth
+    ) {
+        carousel.classList.add("no-transition");
+        carousel.scrollLeft = carousel.offsetWidth;
+        carousel.classList.remove("no-transition");
+    }
+
+    // Clear existing timeout & start autoplay if mouse is not hovering over carousel
+        clearTimeout(timeoutId);
+        if (!wrapper.matches(":hover")) autoPlay();
+    };
+
+    const autoPlay = () => {
+    if (window.innerWidth < 800 || !isAutoPlay) return; // Return if window is smaller than 800 or isAutoPlay is false
+    // Autoplay the carousel after every 2500 ms
+        timeoutId = setTimeout(() => (carousel.scrollLeft += firstCardWidth), 2500);
+    };
+    autoPlay();
+
+    carousel.addEventListener("mousedown", dragStart);
+    carousel.addEventListener("mousemove", dragging);
+    document.addEventListener("mouseup", dragStop);
+    carousel.addEventListener("scroll", infiniteScroll);
+    wrapper.addEventListener("mouseenter", () => clearTimeout(timeoutId));
+    wrapper.addEventListener("mouseleave", autoPlay);
+
+
 
     </script>
 </body>
