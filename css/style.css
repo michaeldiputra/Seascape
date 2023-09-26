@@ -12,6 +12,11 @@ body {
 }
 
 /* ------------DIV TAMPLATE---------- */
+.no-scroll {
+    overflow: hidden;
+}
+
+
 .text-style-allcaps {
     text-transform: uppercase;
 }
@@ -179,11 +184,11 @@ body {
 
 .zonalaut{
     width: 100%;
-    height: fit-content;
+    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 200px 0 50px 0;
+    margin: 230px 0 0px 0;
     flex-direction: column;
 }
 
@@ -200,25 +205,35 @@ body {
     font-weight: 500;
 }
 
+.hrefundersea{
+    position: absolute;
+    top: 700px;
+}
+
 .dec{
     width: 70%;
 }
 
-.card-dec-container{
+.card-box-outer{
     position: fixed;
     z-index: 999;
     top: 0;
     left: 0;
     width: 100vw;
     height: 100vh;
-    background-color: rgba(0, 0, 0, 0.5); /* Latar belakang semi-transparan */
     display: flex;
     justify-content: center;
     align-items: center;
     margin: 0 0 0 0;
+    transform: translateY(-1000px);
 }
 
-.card-dec{
+.transition{
+    transition: 0.7s ease;
+
+}
+
+.card-box{
     width: fit-content;
     max-width: 90vw; /* Lebar maksimum div agar tidak terlalu besar */
     height: fit-content;
@@ -228,32 +243,61 @@ body {
     justify-content:end ;
     padding: 20px;
     margin: 0 0 0 0;
+    transition: 0.8s ease;
+    position: absolute;
+    z-index: 1000;
 }
 
-.card-dec-buka{
-    transform: translateY(0px);
-}
-
-.card-dec img{
+.card-box img{
     max-height: 90vh;
     margin-right: 10px; /* Jarak antara gambar dan teks */
     border-radius: 10px;
 }
 
-.card-dec-text{
+.card-box-text{
     display: flex;
     justify-content: center;
     /* height: 90vw; */
     align-items: center;
 }
 
-.card-dec p {
+.card-box p {
     flex: 1; /* Menggunakan ruang tersisa di sisi kiri */
     font-size: 20px;
     text-align: center;
     line-height: normal; /* Mengatur tata letak vertikal ke tengah */
     height: fit-content;
 }
+
+.card-box-exit{
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5); /* Latar belakang semi-transparan */
+    transition: 0.5s ease;
+    opacity: 0;
+}
+
+.card-box-buka{
+    transform: translateY(0px);
+    transition: 0.5s ease;
+}
+
+/* .outer-bintanglaut{
+    transform: translateY(-1000px);
+}
+
+.exit-bintanglaut{
+    transform: translateY(-1000px);
+}
+
+.box-babilaut{
+    transform: translateY(-1000px);
+
+}
+
+.exit-babilaut{
+    transform: translateY(-1000px);
+} */
 
 /* ----------COROUSEL---------- */
 
@@ -271,11 +315,12 @@ body {
     position: absolute;
     text-align: center;
     line-height: 50px;
-    background: #fff;
+    /* background: #fff; */
     border-radius: 50%;
     box-shadow: 0 3px 6px rgba(0,0,0,0.23);
     transform: translateY(-50%);
     transition: transform 0.1s linear;
+    color: #fff;
 }
 .wrapper i:active{
     transform: translateY(-50%) scale(0.85);
