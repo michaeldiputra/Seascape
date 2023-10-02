@@ -341,3 +341,15 @@ $("#exit-siput").click(function () {
   }, 500);
 });
 
+$("#pantaibatu").click(function () {
+  $("#outer-pantaibatu").addClass("card-box-buka");
+  setTimeout(() => {
+    $("#exit-pantaibatu").css("opacity", "1");
+  }, 500);
+});
+$("#exit-pantaibatu").click(function () {
+  $("#exit-pantaibatu").css("opacity", "0");
+  setTimeout(() => {
+    $("#outer-pantaibatu").removeClass("card-box-buka");
+  }, 500);
+});
