@@ -11,7 +11,7 @@ document.body.classList.add('no-scroll');
 // Tunggu selama 3 detik (atau waktu yang sesuai) sebelum menghapus kelas "no-scroll"
 setTimeout(function() {
   enableScrolling(); // Hapus kelas "no-scroll"
-}, 3000); // Ganti dengan waktu yang sesuai
+}, 300k0); // Ganti dengan waktu yang sesuai
 
 // Seleksi elemen dengan kelas "seeunder-text"
 const seeunderTextElement = document.querySelector('.seeunder-text p');
@@ -341,15 +341,19 @@ $("#exit-siput").click(function () {
   }, 500);
 });
 
-$("#pantaibatu").click(function () {
-  $("#outer-pantaibatu").addClass("card-box-buka");
-  setTimeout(() => {
-    $("#exit-pantaibatu").css("opacity", "1");
-  }, 500);
+// neritic
+const flexBox = document.querySelector(".flex-box");
+
+flexBox.addEventListener("mouseover", function () {
+  const paragraph = this.querySelector(".flex-box-text p");
+    $(".flex-box").addClass("flex-box-buka");
+    $(".flex-box-text").addClass("flex-box-text-buka");
+    paragraph.style.display = "block";
 });
-$("#exit-pantaibatu").click(function () {
-  $("#exit-pantaibatu").css("opacity", "0");
-  setTimeout(() => {
-    $("#outer-pantaibatu").removeClass("card-box-buka");
-  }, 500);
+
+flexBox.addEventListener("mouseout", function () {
+  const paragraph = this.querySelector(".flex-box-text p");
+    $(".flex-box").removeClass("flex-box-buka");
+    $(".flex-box-text").removeClass("flex-box-text-buka");
+    paragraph.style.display = "none";
 });
